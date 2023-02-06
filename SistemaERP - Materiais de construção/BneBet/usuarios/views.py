@@ -1,10 +1,7 @@
 from django.http import HttpResponse
-from rolepermissions.decorators import has_permission_decorator
 from django.shortcuts import render
+from rolepermissions.decorators import has_permission_decorator
 
-
-@has_permission_decorator('cadastrar_vendedor')
+@has_permission_decorator('cadastrar_vendedor') # permite passar como parâmetro, a função ou o cargo.
 def cadastrar_vendedor(request):
-    return HttpResponse('Teste')
-
-# Create your views here.
+    return render(request, 'cadastrar_vendedor.html')
