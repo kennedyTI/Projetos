@@ -3,7 +3,7 @@
 {% block 'body' %}
 
     <div class="container">
-        <form action="{% url 'cadastrar_vendedor' %}" method="POST">{% csrf_token %}
+        <form action="{% url 'login' %}" method="POST">{% csrf_token %}
             <br>
             <label>E-mail</label>
             <input type="email" class="form-control" name="email"  id="email" placeholder= "Digite o Email..."
@@ -11,10 +11,6 @@
             <br>
             <label>Senha</label>
             <input type="senha" class="form-control" name="senha"  id="senha" placeholder= "Digite a Senha..."
-            <br>
-            <br>
-            <label>Cargo</label>
-            <input type="cargo" class="form-control" name="cargo"  id="cargo" placeholder= "Digite o cargo do novo Usuário..."
             <br>
             <br>
             <input type="submit" class="btn btn-success" value="Entrar" >
