@@ -20,17 +20,19 @@ Tutoriais:
 
 	3ª) Django
 
-		3.1ª)django-admin startproject NomeDoProjeto . => cria um novo projeto:
+		3.1ª)python -m pip install Django  => Instala a Biblioteca:
 
-		3.2ª)python manage.py runserver => inicia o projeto:
+		3.2ª)django-admin startproject NomeDoProjeto . => cria um novo projeto:
 
-		3.3ª)python3 manage.py startapp NomeDoApp=> cria um novo App(tela):
+		3.3ª)python manage.py runserver => inicia o projeto:
 
-		3.4ª)python3 manage.py makemigrations => AINDA NÃO SEI PRA QUE SERVE.
+		3.4ª)python3 manage.py startapp NomeDoApp=> cria um novo App(tela):
 
-		3.5ª)python manage.py migrate => AINDA NÃO SEI PRA QUE SERVE.
+		3.5ª)python3 manage.py makemigrations => AINDA NÃO SEI PRA QUE SERVE:
 
-		3.6ª)python manage.py createsuperuser => Criar super usuário para o servidor.
+		3.6ª)python manage.py migrate => Atualiza os dados no Banco de Dados:
+		
+		3.7ª)python manage.py createsuperuser => Criar super usuário para o servidor:
 
 
 ****************OBJETIVOS****************
