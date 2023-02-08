@@ -9,16 +9,6 @@ urlpatterns = [
         views.cadastrar_usuario,
         name='cadastrar_usuario'
     ),
-    path(
-        'login/',
-        views.login,
-        name='login'
-    ),
-    path(
-        'sair/',
-        views.logout,
-        name='sair'
-    ),
     # Botão Excluir.
     path(
         'excluir_usuario/<str:id>/',

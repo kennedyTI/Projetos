@@ -6,10 +6,14 @@ urlpatterns = [
         'admin/', 
         admin.site.urls
     ),
+    #   Redireciona para a tela de Loogin.
+    path(
+        'account/',
+        include('account.urls')
+    ),
     #   Redireciona para o app usuários.
     path(
         'usuario/', 
         include('usuarios.urls')
      ),
-
 ]

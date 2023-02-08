@@ -11,7 +11,7 @@ from rolepermissions.roles import AbstractUserRole
 class Gerente(AbstractUserRole):
     available_permissions = {
         'cadastrar_produtos': True,
-        'cadastrar_usuario': True,
+        'usuarios': True,
         'liberar_descontos': True,
     }
 
