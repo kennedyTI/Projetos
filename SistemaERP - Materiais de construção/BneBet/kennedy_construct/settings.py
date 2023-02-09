@@ -1,3 +1,4 @@
+from django.contrib.messages import constants
 from pathlib import Path
 import os
 
@@ -117,3 +118,12 @@ AUTH_USER_MODEL = 'usuarios.Users'
 
 # Role Permissions
 ROLEPERMISSIONS_MODULE = 'kennedy_construct.roles'
+
+# Alert MENSSAGENS
+MESSAGE_TAGS = {
+    constants.DEBUG: 'alert-info',
+    constants.ERROR: 'alert-danger',
+    constants.SUCCESS: 'alert-success',
+    constants.INFO: 'alert-info',
+    constants.WARNING: 'alert alert-warning'
+}
