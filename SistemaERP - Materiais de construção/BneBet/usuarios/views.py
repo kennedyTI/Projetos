@@ -10,6 +10,7 @@ from .models import Users
 
 
 # Funções da tela cadastrar_usuario.
+
 @has_permission_decorator('usuario')  # permite passar como parâmetro, a função ou o cargo.
 def cadastrar_usuario(request):
     if request.method == 'GET':

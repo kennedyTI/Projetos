@@ -28,6 +28,9 @@ INSTALLED_APPS = [
     # Nossos (apps).
     'account',
     'usuarios',
+    'callcenter',
+    'clientes',
+    
     'rolepermissions',  # ‘app’ de permissões.
 
 ]
